@@ -13,21 +13,57 @@
     
 
 }
+
+
+.categoryDiv p{
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
 .categoryDiv:nth-child(2){
-    background-color: red;
+    background: linear-gradient(rgba(108, 198, 63, 0), rgba(108, 198, 63, 0.1));
+}
+.categoryDiv:nth-child(1){
+    background: linear-gradient(rgba(108, 198, 63, 0), rgba(108, 198, 63, 0.1));
+}
+.categoryDiv:nth-child(6){
+    background: linear-gradient(rgba(108, 198, 63, 0), rgba(108, 198, 63, 0.1));
+}
+.categoryDiv:nth-child(5){
+    background: linear-gradient(rgba(108, 198, 63, 0), rgba(108, 198, 63, 0.1));
 }
 
 .categoryContainer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-
-
 .container{
     width: 90%;
     max-width: 1400px;
     margin: 0 auto;
-    border: 1px solid red;
 }
-
+.sorting-texts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 88%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.sorting-texts h1{
+    font-size: 3.7rem;
+}
+.sorting-texts button{
+    font-size: 1.25rem;
+    padding: 14px 25px;
+    border-radius: 12px;
+    background-color: rgba(231, 250, 254, 1);
+    border: none;
+    font-weight: bold;
+    transition-duration: 0.85s;
+}
+.sorting-texts button:hover{
+    background-color: black;
+    color: rgb(215, 255, 242);
+}
