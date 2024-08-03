@@ -4,8 +4,11 @@ function MenuOpen () {
     menu.classList = "openMenu";
 }
 
+
+
 function MenuClose () {
     let menu = document.getElementById("menu");
-
+    
     menu.classList = "menu";
 }
+
