@@ -19,7 +19,9 @@ header {
   align-items: center;
   flex-direction: column;
   color: #000;
-  float: right;
+  position: absolute;
+  right: 0;
+  z-index: 1;
   background-color: #e7f9fd;
   transition-duration: 1s;
   transform: translateX(0px);
