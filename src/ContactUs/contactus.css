@@ -1,0 +1,10 @@
+main {
+  width: 100%;
+  height: 100vh;
+  border: solid;
+  margin-top: 10vh;
+}
+
+main h1{
+    text-align: center;
+}

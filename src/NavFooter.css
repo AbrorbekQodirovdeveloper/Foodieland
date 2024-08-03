@@ -8,7 +8,7 @@
 
 header {
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow-x: hidden;
 }
 
@@ -19,7 +19,9 @@ header {
   align-items: center;
   flex-direction: column;
   color: #000;
-  float: right;
+  position: absolute;
+  right: 0;
+  z-index: 1;
   background-color: #e7f9fd;
   transition-duration: 1s;
   transform: translateX(0px);
@@ -95,10 +97,12 @@ nav div {
   align-items: center;
   flex-direction: column;
   color: #000;
-  float: right;
+  right: 0;
+  z-index: 1;
   background-color: #e7f9fd;
   transition-duration: 1s;
   transform: translateX(500px);
+  position: absolute;
 }
 
 .menu img {
