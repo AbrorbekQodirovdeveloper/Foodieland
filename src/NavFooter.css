@@ -21,6 +21,7 @@ header {
   color: #000;
   position: absolute;
   right: 0;
+  top: 0;
   z-index: 1;
   background-color: #e7f9fd;
   transition-duration: 1s;
@@ -29,6 +30,10 @@ header {
 .openMenu img {
   margin-top: 200px;
   margin-bottom: 50px;
+}
+
+.openMenu ul{
+  display: block;
 }
 
 .openMenu ul {
@@ -67,7 +72,6 @@ nav {
   align-items: center;
   justify-content: space-around;
   border-bottom: 1px #0000001a solid;
-  position: absolute;
 }
 
 nav img {
