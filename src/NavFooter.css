@@ -1,4 +1,3 @@
-
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +10,7 @@ header {
   height: auto;
 }
 
-.openMenu{
+.openMenu {
   width: 400px;
   height: 100vh;
   display: flex;
@@ -26,6 +25,7 @@ header {
   transition-duration: 1s;
   transform: translateX(0px);
 }
+
 .openMenu img {
   margin-top: 200px;
   margin-bottom: 50px;
@@ -42,18 +42,21 @@ header {
   font-weight: 600;
   margin-bottom: 50px;
 }
-.openMenu ul li{
+
+.openMenu ul li {
   margin-top: 8px;
 }
+
 .openMenu ul li a {
- color: #000;
+  color: #000;
 }
-.openMenu div{
+
+.openMenu div {
   display: flex;
   gap: 10px;
 }
 
-.closeMenu{
+.closeMenu {
   width: 80%;
   height: 5vh;
   display: flex;
@@ -61,7 +64,8 @@ header {
   align-items: center;
   display: none;
 }
-#close{
+
+#close {
   width: 30px;
 }
 
@@ -95,6 +99,7 @@ nav div {
   display: flex;
   gap: 30px;
 }
+
 .menu {
   width: 400px;
   height: 100vh;
@@ -123,19 +128,24 @@ nav div {
   font-weight: 600;
   margin-bottom: 50px;
 }
-.menu ul li{
+
+.menu ul li {
   margin-top: 8px;
 }
+
 .menu ul li a {
- color: #000;
+  color: #000;
 }
-.menu div{
+
+.menu div {
   display: flex;
   gap: 10px;
 }
-.muneSVG{
+
+.muneSVG {
   display: none;
 }
+
 footer {
   width: 100%;
   height: auto;
@@ -149,25 +159,30 @@ footer {
   justify-content: space-between;
   margin: auto;
 }
+
 .top div img {
   width: 130px;
 }
+
 .top div p {
   font-size: 25px;
   margin-top: 20px;
   color: #00000099;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 .top ul {
   display: flex;
   gap: 60px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 25px;
 }
+
 .top ul li a {
   font-weight: 500;
   color: #000;
 }
+
 footer hr {
   width: 90%;
   margin: auto;
@@ -192,15 +207,21 @@ footer hr {
 
 .bottom div h1 {
   width: 100%;
+<<<<<<< HEAD
   font-size: 22px;
+=======
+  font-size: 20px;
+>>>>>>> f6565cf945043e96aac8749dabace7f926b1a965
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 400;
   color: #00000099;
 }
+
 .bottom div h1 b {
   font-weight: 500;
   color: orangered;
 }
+
 .footer_icons {
   width: 30%;
   height: auto;
@@ -235,7 +256,7 @@ svg {
 
   }
 
-  .muneSVG{
+  .muneSVG {
     display: block;
     width: 40px;
   }
@@ -251,7 +272,7 @@ svg {
   }
 
 
-.top {
+  .top {
     width: 90%;
     height: 20vh;
     display: flex;
@@ -259,9 +280,11 @@ svg {
     justify-content: space-between;
     margin: auto;
   }
+
   .top div img {
     width: 100px;
   }
+
   .top div p {
     font-size: 20px;
     margin-top: 20px;
@@ -269,6 +292,7 @@ svg {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
   }
+
   .top ul {
     display: flex;
     gap: 60px;
@@ -276,10 +300,12 @@ svg {
       sans-serif;
     font-size: 18px;
   }
+
   .top ul li a {
     font-weight: 500;
     color: #000;
   }
+
   footer hr {
     width: 90%;
     margin: auto;
@@ -310,10 +336,12 @@ svg {
     font-weight: 400;
     color: #00000099;
   }
+
   .bottom div h1 b {
     font-weight: 500;
     color: orangered;
   }
+
   .footer_icons {
     width: 30%;
     height: auto;
@@ -349,12 +377,12 @@ svg {
 
   }
 
-  .muneSVG{
+  .muneSVG {
     display: block;
     width: 30px;
   }
 
-  .openMenu{
+  .openMenu {
     width: 300px;
   }
 
@@ -374,9 +402,11 @@ svg {
     flex-direction: column;
     margin: auto;
   }
+
   .top div img {
     width: 100px;
   }
+
   .top div p {
     font-size: 20px;
     margin-top: 20px;
@@ -384,6 +414,7 @@ svg {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
   }
+
   .top ul {
     display: flex;
     gap: 60px;
@@ -393,10 +424,12 @@ svg {
     margin-bottom: 50px;
     margin-top: 20px;
   }
+
   .top ul li a {
     font-weight: 500;
     color: #000;
   }
+
   footer hr {
     width: 90%;
     margin: auto;
@@ -427,10 +460,12 @@ svg {
     font-weight: 400;
     color: #00000099;
   }
+
   .bottom div h1 b {
     font-weight: 500;
     color: orangered;
   }
+
   .footer_icons {
     width: 30%;
     height: auto;
