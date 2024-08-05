@@ -1,28 +1,28 @@
 
 
 
-window.addEventListener("load", homeData())
+window.addEventListener("load",homeData())
 
 
 
 
-async function homeData() {
-    await fetch("https://66ab5539636a4840d7ca3261.mockapi.io/dcd/user")
+    async function homeData(){
+        await fetch("https://66ab5539636a4840d7ca3261.mockapi.io/dcd/user")
         .then(res => res.json())
-        .then(data => catigoriya(data
+        .then(data => catigoriya(data))
     }
 
 
 
 
 
-function catigoriya(homedata) {
-
+function catigoriya(homedata){
+   
     let catigoriya = homedata[0][0];
 
     let catigoriyabox = document.getElementById("catigoriya");
 
-    catigoriya.map((item) => {
+    catigoriya.map((item) =>{
         let catigoriyacard = document.createElement("div");
         catigoriyabox.appendChild(catigoriyacard);
         catigoriyacard.className = "categoryDiv";
