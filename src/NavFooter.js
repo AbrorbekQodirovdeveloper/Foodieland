@@ -1,7 +1,7 @@
 function MenuOpen () {
     let menu = document.getElementById("menu");
 
-    menu.classList = "openMenu";
+    menu.classList.toggle("openMenu");
 }
 
 
