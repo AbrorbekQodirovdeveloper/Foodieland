@@ -24,7 +24,9 @@ function catigoriya(homedata){
 
     catigoriya.map((item) =>{
         let catigoriyacard = document.createElement("div");
-        catigoriyabox.appendChild(catigoriyacard)
+        catigoriyabox.appendChild(catigoriyacard);
+        catigoriyacard.className = "categoryDiv";
+        catigoriyabox.className = "categoryContainer";
         let catigoriyaimg = document.createElement("img");
         catigoriyaimg.src = item.image;
         catigoriyacard.appendChild(catigoriyaimg);
