@@ -1,4 +1,3 @@
-
 * {
   padding: 0;
   margin: 0;
@@ -9,24 +8,10 @@
 header {
   width: 100%;
   height: auto;
-  overflow-x: hidden;
 }
 
-.openMenu{
-  width: 400px;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: #000;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1;
-  background-color: #e7f9fd;
-  transition-duration: 1s;
-  transform: translateX(0px);
-}
+
+
 .openMenu img {
   margin-top: 200px;
   margin-bottom: 50px;
@@ -43,25 +28,30 @@ header {
   font-weight: 600;
   margin-bottom: 50px;
 }
-.openMenu ul li{
+
+.openMenu ul li {
   margin-top: 8px;
 }
+
 .openMenu ul li a {
- color: #000;
+  color: #000;
 }
-.openMenu div{
+
+.openMenu div {
   display: flex;
   gap: 10px;
 }
 
-.closeMenu{
+.closeMenu {
   width: 80%;
   height: 5vh;
   display: flex;
   justify-content: end;
   align-items: center;
+  display: none;
 }
-#close{
+
+#close {
   width: 30px;
 }
 
@@ -72,6 +62,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   border-bottom: 1px #0000001a solid;
+
 }
 
 nav img {
@@ -94,6 +85,7 @@ nav div {
   display: flex;
   gap: 30px;
 }
+
 .menu {
   width: 400px;
   height: 100vh;
@@ -101,12 +93,17 @@ nav div {
   align-items: center;
   flex-direction: column;
   color: #000;
-  right: 0;
   z-index: 1;
   background-color: #e7f9fd;
-  transition-duration: 1s;
-  transform: translateX(500px);
   position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(500px);
+  transition: all 1s ease-in-out;
+}
+
+.openMenu {
+  transform: translateX(0px);
 }
 
 .menu img {
@@ -120,20 +117,26 @@ nav div {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 600;
   margin-bottom: 50px;
+  display: block;
 }
-.menu ul li{
+
+.menu ul li {
   margin-top: 8px;
 }
+
 .menu ul li a {
- color: #000;
+  color: #000;
 }
-.menu div{
+
+.menu div {
   display: flex;
   gap: 10px;
 }
-.muneSVG{
+
+.muneSVG {
   display: none;
 }
+
 footer {
   width: 100%;
   height: auto;
@@ -147,25 +150,30 @@ footer {
   justify-content: space-between;
   margin: auto;
 }
+
 .top div img {
   width: 130px;
 }
+
 .top div p {
   font-size: 25px;
   margin-top: 20px;
   color: #00000099;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 .top ul {
   display: flex;
   gap: 60px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 25px;
 }
+
 .top ul li a {
   font-weight: 500;
   color: #000;
 }
+
 footer hr {
   width: 90%;
   margin: auto;
@@ -175,7 +183,7 @@ footer hr {
 
 .bottom {
   width: 96%;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   justify-content: end;
   margin-top: 50px;
@@ -190,15 +198,18 @@ footer hr {
 
 .bottom div h1 {
   width: 100%;
-  font-size: 30px;
+  font-size: 22px;
+  font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 400;
   color: #00000099;
 }
+
 .bottom div h1 b {
   font-weight: 500;
   color: orangered;
 }
+
 .footer_icons {
   width: 30%;
   height: auto;
@@ -213,6 +224,8 @@ svg {
 }
 
 @media (max-width: 1200px) {
+
+
   nav {
     width: 100%;
     height: 13vh;
@@ -231,7 +244,7 @@ svg {
 
   }
 
-  .muneSVG{
+  .muneSVG {
     display: block;
     width: 40px;
   }
@@ -247,7 +260,7 @@ svg {
   }
 
 
-.top {
+  .top {
     width: 90%;
     height: 20vh;
     display: flex;
@@ -255,9 +268,11 @@ svg {
     justify-content: space-between;
     margin: auto;
   }
+
   .top div img {
     width: 100px;
   }
+
   .top div p {
     font-size: 20px;
     margin-top: 20px;
@@ -265,6 +280,7 @@ svg {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
   }
+
   .top ul {
     display: flex;
     gap: 60px;
@@ -272,10 +288,12 @@ svg {
       sans-serif;
     font-size: 18px;
   }
+
   .top ul li a {
     font-weight: 500;
     color: #000;
   }
+
   footer hr {
     width: 90%;
     margin: auto;
@@ -306,10 +324,12 @@ svg {
     font-weight: 400;
     color: #00000099;
   }
+
   .bottom div h1 b {
     font-weight: 500;
     color: orangered;
   }
+
   .footer_icons {
     width: 30%;
     height: auto;
@@ -345,12 +365,12 @@ svg {
 
   }
 
-  .muneSVG{
+  .muneSVG {
     display: block;
     width: 30px;
   }
 
-  .openMenu{
+  .openMenu {
     width: 300px;
   }
 
@@ -370,9 +390,11 @@ svg {
     flex-direction: column;
     margin: auto;
   }
+
   .top div img {
     width: 100px;
   }
+
   .top div p {
     font-size: 20px;
     margin-top: 20px;
@@ -380,6 +402,7 @@ svg {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
   }
+
   .top ul {
     display: flex;
     gap: 60px;
@@ -389,10 +412,12 @@ svg {
     margin-bottom: 50px;
     margin-top: 20px;
   }
+
   .top ul li a {
     font-weight: 500;
     color: #000;
   }
+
   footer hr {
     width: 90%;
     margin: auto;
@@ -423,10 +448,12 @@ svg {
     font-weight: 400;
     color: #00000099;
   }
+
   .bottom div h1 b {
     font-weight: 500;
     color: orangered;
   }
+
   .footer_icons {
     width: 30%;
     height: auto;

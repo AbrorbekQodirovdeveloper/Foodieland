@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    margin-bottom: 30rem;
+}
+
+header .container {
+    width: 80%;
+}
+
+.blogArticle {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 12rem;
+    text-align: center;
+}
+
+.blogArticle h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.blogArticle p {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 5rem;
+}
+
+.blogArticle .searchDiv {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.blogArticle .searchDiv .searchBox {
+    padding: 5px;
+    width: 750px;
+    height: auto;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.blogArticle .searchDiv input {
+    padding: 20px 80px;
+    font-size: 1.1rem;
+    position: relative;
+    right: 4rem;
+    border: none;
+}
+
+.blogArticle .searchDiv input:focus {
+    outline: none;
+}
+
+.blogArticle .searchDiv button {
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    padding: 25px 8%;
+    position: relative;
+    left: 4.5rem;
+    border: none;
+    border-radius: 16px;
+    color: #ffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.blogArticle .searchDiv button:active {
+    transform: scale(95%);
+}
+
+.searchBoxTiny {
+    display: none;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10rem;
+}
+
+main .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.videos {
+    width: 90%;
+}
+
+.tastyRecipes {
+    width: 40%;
+    margin-left: 1rem;
+}
+
+.projectVids {
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#vidImg {
+    width: 60%;
+    height: 30vh;
+    margin-top: 1rem;
+    border-radius: 20px;
+    margin-right: 1rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+#vidTitle {
+    font-weight: 600;
+    margin-bottom: 1.7rem;
+}
+
+.row {
+    padding: 10px;
+}
+
+#vidContent {
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+
+#profileImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+#profileName {
+    font-weight: 600;
+    margin-right: 4rem;
+}
+
+#profilePosted {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.tastyFoods {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#testyMainTitle {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+#tastyFoodBy {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 1rem;
+}
+
+.firstSection {
+    margin-bottom: 5rem;
+}
+
+.newsletter {
+    border-radius: 60px;
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+    background-image: url(./blog_img/Mask\ Group.png);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 92.5%;
+    height: 53vh;
+}
+
+.newsletter h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.newsletter p {
+    width: 40rem;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 5rem;
+}
+
+.newsletter .newsletterBox {
+    width: 570px;
+    height: 60px;
+    display: flex;
+    background: #ffff;
+    border-radius: 14px;
+    align-items: center;
+    border: none;
+}
+
+.newsletter .newsletterBox input {
+    padding: 15px 50px;
+    border: none;
+    margin-right: 2rem;
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+
+#newsBtn {
+    padding: 17px 50px;
+    border-radius: 8px;
+    border: none;
+    position: relative;
+    left: 0.5rem;
+    color: #ffff;
+    background: #000;
+}
+
+#newsInp:focus {
+    outline: none;
+}
+
+
+@media (max-width: 1000px) {
+    header {
+        margin-bottom: 10rem;
+    }
+
+    main .container {
+        flex-direction: column;
+    }
+
+    .videos {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .projectVids {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #vidImg {
+        position: relative;
+        left: 8rem;
+        height: 45vh;
+    }
+
+    .profile {
+        position: relative;
+        left: 8rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media (max-width: 805px) {
+    .blogArticle .searchDiv .searchBox {
+        width: 600px;
+    }
+
+    .blogArticle .searchDiv .searchBox input {
+        padding: 20px 60px;
+    }
+
+    .blogArticle .searchDiv button {
+        position: relative;
+        left: 1.5rem;
+    }
+
+    .blogArticle .searchDiv input {
+        padding: 20px 60px;
+    }
+}
+
+@media (max-width: 625px) {
+    .blogArticle .searchDiv .searchBox {
+        width: 500px;
+        display: flex;
+    }
+
+    .blogArticle .searchDiv button {
+        position: relative;
+        left: -1.5rem;
+    }
+
+    .blogArticle .searchDiv input {
+        padding: 20px 60px;
+        font-size: 1.1rem;
+        position: relative;
+        right: 3.5rem;
+        border: none;
+    }
+}
+
+@media (max-width: 525px) {
+    .blogArticle .searchDiv .searchBox {
+        display: none;
+    }
+
+    .searchBoxTiny {
+        position: relative;
+        left: 3.5rem;
+        display: block;
+    }
+
+    #tinyInp {
+        border: 1px solid rgb(183, 183, 183);
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    #tinyBtn {
+        position: absolute;
+        top: 5rem;
+        right: 5rem;
+        padding: 20px 70px;
+    }
+}
+
+@media (max-width: 415px) {
+    .blogArticle h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+}
