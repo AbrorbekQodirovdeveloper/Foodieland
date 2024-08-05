@@ -7,6 +7,10 @@
     font-family: "Inter", sans-serif;
 }
 
+header {
+    margin-bottom: 30rem;
+}
+
 header .container {
     width: 80%;
 }
@@ -179,14 +183,18 @@ main .container {
 }
 
 .newsletter {
+    border-radius: 60px;
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+    background-image: url(./blog_img/Mask\ Group.png);
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     width: 92.5%;
-    height: 63vh;
-    background: url(./blog_img/Mask\ Group.png), no-repeat, center center;
+    height: 53vh;
 }
 
 .newsletter h1 {
