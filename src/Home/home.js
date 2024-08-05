@@ -33,5 +33,12 @@ function catigoriya(homedata){
         catigoriyacard.appendChild(catigoriyatitle);
     })
 
+    simpleFunction(homedata)
 
+}
+
+
+
+function simpleFunction(data){
+    console.log(data);
 }
