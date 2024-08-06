@@ -4,12 +4,31 @@
   text-decoration: none;
   list-style: none;
 }
-
+body{
+  overflow-x: hidden;
+}
 header {
   width: 100%;
+  
   height: auto;
 }
 
+
+.openMenu{
+  display: block;
+  width: 400px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+  z-index: 1;
+  background-color: #e7f9fd;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 1s ease-in;
+}
 
 
 .openMenu img {
@@ -90,6 +109,7 @@ nav div {
   width: 400px;
   height: 100vh;
   display: flex;
+  display: none;
   align-items: center;
   flex-direction: column;
   color: #000;
@@ -105,6 +125,7 @@ nav div {
 .openMenu {
   transform: translateX(0px);
 }
+
 
 .menu img {
   margin-top: 200px;
@@ -225,7 +246,6 @@ svg {
 
 @media (max-width: 1200px) {
 
-
   nav {
     width: 100%;
     height: 13vh;
@@ -272,198 +292,3 @@ svg {
   .top div img {
     width: 100px;
   }
-
-  .top div p {
-    font-size: 20px;
-    margin-top: 20px;
-    color: #00000099;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-  }
-
-  .top ul {
-    display: flex;
-    gap: 60px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-size: 18px;
-  }
-
-  .top ul li a {
-    font-weight: 500;
-    color: #000;
-  }
-
-  footer hr {
-    width: 90%;
-    margin: auto;
-    border: solid 1px #0000001a;
-    font-size: larger;
-  }
-
-  .bottom {
-    width: 96%;
-    height: 10vh;
-    display: flex;
-    justify-content: end;
-    margin-top: 50px;
-  }
-
-  .bottom div {
-    width: 90%;
-    height: 15vh;
-    display: flex;
-    align-items: center;
-  }
-
-  .bottom div h1 {
-    width: 100%;
-    font-size: 15px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-weight: 400;
-    color: #00000099;
-  }
-
-  .bottom div h1 b {
-    font-weight: 500;
-    color: orangered;
-  }
-
-  .footer_icons {
-    width: 30%;
-    height: auto;
-    display: flex;
-    justify-content: end;
-    gap: 10px;
-    margin-right: 10px;
-  }
-
-  footer svg {
-    width: 20px;
-  }
-}
-
-
-
-@media (max-width: 600px) {
-  nav {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-bottom: 1px #0000001a solid;
-  }
-
-  nav img {
-    width: 100px;
-  }
-
-  nav ul {
-    display: none;
-
-  }
-
-  .muneSVG {
-    display: block;
-    width: 30px;
-  }
-
-  .openMenu {
-    width: 300px;
-  }
-
-  nav div {
-    display: none;
-
-  }
-
-  footer {
-    width: 100%;
-    height: auto;
-  }
-
-  .top {
-    width: 90%;
-    height: 20vh;
-    flex-direction: column;
-    margin: auto;
-  }
-
-  .top div img {
-    width: 100px;
-  }
-
-  .top div p {
-    font-size: 20px;
-    margin-top: 20px;
-    color: #00000099;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-  }
-
-  .top ul {
-    display: flex;
-    gap: 60px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-size: 15px;
-    margin-bottom: 50px;
-    margin-top: 20px;
-  }
-
-  .top ul li a {
-    font-weight: 500;
-    color: #000;
-  }
-
-  footer hr {
-    width: 90%;
-    margin: auto;
-    border: solid 1px #0000001a;
-    font-size: larger;
-  }
-
-  .bottom {
-    width: 96%;
-    height: 10vh;
-    display: flex;
-    justify-content: end;
-    margin-top: 50px;
-  }
-
-  .bottom div {
-    width: 90%;
-    height: 15vh;
-    display: flex;
-    align-items: center;
-  }
-
-  .bottom div h1 {
-    width: 100%;
-    font-size: 15px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-weight: 400;
-    color: #00000099;
-  }
-
-  .bottom div h1 b {
-    font-weight: 500;
-    color: orangered;
-  }
-
-  .footer_icons {
-    width: 30%;
-    height: auto;
-    display: flex;
-    justify-content: end;
-    gap: 10px;
-    margin-right: 10px;
-  }
-
-  footer svg {
-    width: 20px;
-  }
-}
