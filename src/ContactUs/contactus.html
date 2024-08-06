@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foodieland</title>
+    <title>Foodieland | Contact Us</title>
 
     <link
       rel="shortcut icon"
@@ -138,7 +138,9 @@
                 <h3>NAME</h3>
                 <input
                   type="text"
+                  maxlength="20"
                   name="username"
+                  required
                   placeholder="Enter your name..."
                 />
               </label>
@@ -146,31 +148,38 @@
                 <h3>SUBJECT</h3>
                 <input
                   type="text"
-                  name="username"
+                  maxlength="20"
+                  name="subject"
+                  required
                   placeholder="Enter your subjuct..."
                 />
               </label>
               <label for="">
                 <h3>EMAIL ADDRESS</h3>
                 <input
-                  type="text"
-                  name="username"
+                  type="email"
+                  maxlength="30"
+                  name="email"
+                  required
                   placeholder="Your email address..."
                 />
               </label>
-              <label for="">
+              <div class="label">
                 <h3>ENQUIRY TYPE</h3>
-                <select name="type" id="">
+                <select name="type" requiredid>
                   <option value="offer">Offer</option>
-                  <option selected value="adversiting">Adversiting</option>
+                  <option value="adversiting">Adversiting</option>
                   <option value="questions">Questions</option>
                 </select>
-              </label>
+              </div>
+
               <label for="" class="label1">
                 <h3>MESSAGES</h3>
                 <textarea
                   type="text"
                   name="message"
+                  maxlength="100"
+                  required
                   placeholder="Enter your messages..."
                 ></textarea>
               </label>
@@ -185,8 +194,8 @@
             tempor incididunt ut labore et dolore magna aliqut enim ad minim
           </p>
           <div>
-            <input type="text" placeholder="Your email address...">
-            <button>Subscribe</button>
+            <input id="newInp" type="text" placeholder="Your email address..." />
+            <button onclick="subscribe()">Subscribe</button>
           </div>
         </div>
         <div class="recipe_section">
