@@ -62,7 +62,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   border-bottom: 1px #0000001a solid;
-
+  
 }
 
 nav img {
@@ -86,25 +86,8 @@ nav div {
   gap: 30px;
 }
 
-.menu {
-  width: 400px;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: #000;
-  z-index: 1;
-  background-color: #e7f9fd;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateX(500px);
-  transition: all 1s ease-in-out;
-}
 
-.openMenu {
-  transform: translateX(0px);
-}
+
 
 .menu img {
   margin-top: 200px;
@@ -342,6 +325,26 @@ svg {
   footer svg {
     width: 20px;
   }
+  .menu {
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+    z-index: 1;
+    background-color: #e7f9fd;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(500px);
+    transition: all 1s ease-in-out;
+   
+  }
+  .openMenu {
+    transform: translateX(0px);
+    display: block;
+  }
 }
 
 
@@ -368,10 +371,6 @@ svg {
   .muneSVG {
     display: block;
     width: 30px;
-  }
-
-  .openMenu {
-    width: 300px;
   }
 
   nav div {
