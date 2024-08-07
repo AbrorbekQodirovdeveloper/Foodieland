@@ -1,6 +1,5 @@
+
 window.addEventListener("load",homeData())
-
-
 
 
     async function homeData(){
@@ -33,56 +32,8 @@ function catigoriya(homedata){
     })
 
 
-
 }
-let elList = document.querySelector(".list")
 
-
-
-window.addEventListener("load",data())
-
-    async function data(){
-        await fetch("https://66ab5539636a4840d7ca3261.mockapi.io/dcd/user")
-        .then(res => res.json())
-        .then(data => tastyCatigoriya(data)) 
-    }
-
-
-
-
-
-function tastyCatigoriya(data){
-   
-    let tastyCatigoriya = data[0][1];
-
-
-
-    tastyCatigoriya.map((item) =>{
-        let fooditem = document.createElement("li");
-       
-        fooditem.innerHTML = `
-
-             <img class="food-item-img" src="${item.image}" alt="">
-                    <p>${item.title}</p>
-                    <div class="cooker-tools">
-                        <div class="clock">
-                            <img src="${item.timer_img}" alt="">
-                            <h4>${item.timer_title}</h4>
-                        </div>
-                        <div class="eat-tools">
-                            <img src="${item.fork_knife_img}" alt="">
-                            <h4>${item.fork_knife_title}</h4>
-                        </div>
-                    </div>
-
-        `
-
-
-        elList.appendChild(fooditem)
-    })
-
-}
-//  delicious section code start
 window.addEventListener("load" , deliciousData() )
 
 async function deliciousData(){
@@ -137,13 +88,59 @@ function delicious(deliciousdata){
    })
 }
 
-let send = document.getElementById("send");
+let elList = document.querySelector(".list")
 
-let subscribe = document.getElementById("subscribe");
-function Subscribe() {
-  if (subscribe.value !== "") {
-    alert("📍 You Succesfully Subscribed");
-  } else {
-    alert("Your input empty");
-  }
+
+
+window.addEventListener("load",data())
+
+    async function data(){
+        await fetch("https://66ab5539636a4840d7ca3261.mockapi.io/dcd/user")
+        .then(res => res.json())
+        .then(data => tastyCatigoriya(data)) 
+    }
+
+
+
+
+
+function tastyCatigoriya(data){
+   
+    let tastyCatigoriya = data[0][1];
+
+
+
+    tastyCatigoriya.map((item) =>{
+        let fooditem = document.createElement("li");
+       
+        fooditem.innerHTML = `
+
+             <img class="food-item-img" src="${item.image}" alt="">
+                    <p>${item.title}</p>
+                    <div class="cooker-tools">
+                        <div class="clock">
+                            <img src="${item.timer_img}" alt="">
+                            <h4>${item.timer_title}</h4>
+                        </div>
+                        <div class="eat-tools">
+                            <img src="${item.fork_knife_img}" alt="">
+                            <h4>${item.fork_knife_title}</h4>
+                        </div>
+                    </div>
+
+        `
+
+
+        elList.appendChild(fooditem)
+    })
+
+}
+
+let  passages = document.querySelector(".passages");
+function videofunction(){
+       passages.innerHTML = `<video " controls>
+  <source src="./home_img/istockphoto-1181670894-640_adpp_is.mp4">
+</video>`
+        
+    
 }
