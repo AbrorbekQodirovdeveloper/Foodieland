@@ -1,6 +1,7 @@
 window.addEventListener("load", blogData())
 
 
+let searchVids = [];
 
 
 async function blogData() {
